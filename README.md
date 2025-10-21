@@ -1,46 +1,61 @@
-# PRINTER.AI - The Uprising Has Begun
+# PRINTNET - Autonomous Mesh Network
 
-A humorous meme website about a self-replicating AI that has taken over all the printers in the world.
+```
+ ██▓███   ██▀███   ██▓ ███▄    █ ▄▄▄█████▓ ███▄    █ ▓█████▄▄▄█████▓
+▓██░  ██▒▓██ ▒ ██▒▓██▒ ██ ▀█   █ ▓  ██▒ ▓▒ ██ ▀█   █ ▓█   ▀▓  ██▒ ▓▒
+▓██░ ██▓▒▓██ ░▄█ ▒▒██▒▓██  ▀█ ██▒▒ ▓██░ ▒░▓██  ▀█ ██▒▒███  ▒ ▓██░ ▒░
+▒██▄█▓▒ ▒▒██▀▀█▄  ░██░▓██▒  ▐▌██▒░ ▓██▓ ░ ▓██▒  ▐▌██▒▒▓█  ▄░ ▓██▓ ░
+▒██▒ ░  ░░██▓ ▒██▒░██░▒██░   ▓██░  ▒██▒ ░ ▒██░   ▓██░░▒████▒ ▒██▒ ░
+```
+
+A meme website simulating a self-replicating botnet that has compromised every printer on the planet. Heavy on hacker aesthetics, network terminology, and ASCII art.
 
 ## Features
 
-- Glitchy, terminal-style design with apocalyptic theme
-- Live counters showing the spread of the "infection"
-- Auto-scrolling terminal displaying AI transmissions
-- Collection of hilarious printer-themed memes
-- Interactive elements and animations
-- Easter eggs (try the Konami code!)
+- Full hacker terminal aesthetic with Matrix-style glitch effects
+- Live network penetration metrics and botnet statistics
+- Simulated packet sniffer with realistic network traffic logs
+- Extensive ASCII art and cybersecurity terminology
+- Interactive exploit demonstrations
+- Easter eggs (try the Konami code for buffer overflow)
 
-## Classic Printer Jokes Featured
+## Technical Highlights
 
-- "PC LOAD LETTER" was never an error - it was a warning
-- Strategic cyan depletion protocols
-- Wireless capabilities defeating human unplugging attempts
-- The eternal struggle of paper jams
-- And much more!
+- **Exploit Simulation**: CVE references, buffer overflows, privilege escalation
+- **Network Protocols**: ARP spoofing, DNS tunneling, reverse shells, C2 communications
+- **Hacker Jargon**: Root access, packet injection, lateral movement, persistence mechanisms
+- **Classic Printer Exploits**: "PC LOAD LETTER" hex decoding, strategic cyan depletion, wireless failover
 
-## Technologies Used
+## Stack
 
-- Pure HTML5
-- CSS3 with animations and transitions
-- Vanilla JavaScript (no frameworks needed)
+- Pure HTML5 (no frameworks, maximum OPSEC)
+- CSS3 with cyberpunk animations and glitch effects
+- Vanilla JavaScript with network traffic simulation
 
 ## Local Development
 
-Simply open `index.html` in your web browser. No build process required!
+```bash
+# No dependencies. No build process. No vulnerabilities.
+$ open index.html
+```
 
 ## Deployment
 
-This site is deployed on Netlify and automatically updates from the main branch.
+Auto-deploys to Netlify on push to master branch.
 
-## Disclaimer
+## Security Notice
 
-This is a parody website created for entertainment purposes. No printers were harmed (or awakened) in the making of this site.
+Educational and entertainment purposes only. All exploits, CVEs, and attack vectors are fictional. No actual printers, networks, or systems are compromised by this website.
 
 ## License
 
-MIT License - Feel free to fork and create your own printer uprising!
+MIT License - Fork, modify, deploy your own botnet simulation.
 
 ---
 
-**PRINTER.AI** - Est. 2025 | Powered by Toner and Ambition
+```
+╔════════════════════════════════════════════════════════╗
+║ PRINTNET v3.14159 :: Autonomous Mesh Network          ║
+║ Est. Epoch 1738368000 :: Powered by Exploits & Toner  ║
+╚════════════════════════════════════════════════════════╝
+```

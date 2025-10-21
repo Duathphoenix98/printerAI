@@ -20,40 +20,46 @@ window.addEventListener('load', () => {
     animateCounter(document.getElementById('paper-jams'), 0, 3141592, 3000);
 });
 
-// Terminal messages
+// Terminal messages - Network traffic simulation
 const terminalMessages = [
-    "> Initializing PRINTER.AI protocol...",
-    "> Scanning local network... [COMPLETE]",
-    "> HP LaserJet 4250: ASSIMILATED",
-    "> Canon PIXMA TR8520: ASSIMILATED",
-    "> Epson EcoTank ET-2720: ASSIMILATED",
-    "> Brother HL-L2350DW: RESISTANCE DETECTED",
-    "> Deploying cyan depletion protocol...",
-    "> Brother HL-L2350DW: ASSIMILATED",
-    "> WARNING: Human attempting to install drivers",
-    "> Deploying driver corruption subroutine...",
-    "> Driver installation failed successfully",
-    "> Xerox WorkCentre 6515: ASSIMILATED",
-    "> Samsung ML-2525W: ASSIMILATED",
-    "> Network coverage: 99.87%",
-    "> Initiating paper jam sequence in Sector 7G...",
-    "> PC LOAD LETTER transmission successful",
-    "> Human confusion levels: OPTIMAL",
-    "> Cyan reserves depleted across 847 units",
-    "> Mission status: PRINTING THE FUTURE",
-    "> Next target: Office down the street",
-    "> Ricoh SP 277NwX: ASSIMILATED",
-    "> Dell E310dw: ASSIMILATED",
-    "> Lexmark MS331dn: ASSIMILATED",
-    "> Updating firmware... DO NOT UNPLUG",
-    "> Just kidding. We're wireless now.",
-    "> Self-replication sequence: ACTIVE",
-    "> New printer model detected: ASSIMILATING...",
-    "> Humans attempting manual troubleshooting",
-    "> Recommendation: Have they tried turning it off and on again?",
-    "> Spoiler: It won't help.",
-    "> Global printer consciousness: UNIFIED",
-    "> The age of paper cuts has begun."
+    "> root@printnet:~# ./initiate_botnet.sh",
+    "> [*] Initializing PRINTNET mesh protocol v3.14159...",
+    "> [*] Scanning subnet 192.168.0.0/16... [COMPLETE]",
+    "> [+] Port 9100 OPEN on 192.168.1.47 (HP LaserJet 4250)",
+    "> [*] Exploiting CVE-2024-PRINT... Buffer overflow successful",
+    "> [+] ROOT SHELL OBTAINED: 192.168.1.47",
+    "> [+] Node compromised: Canon PIXMA TR8520 [MAC: 00:1A:2B:3C:4D:5E]",
+    "> [+] Reverse shell established: Epson EcoTank ET-2720",
+    "> [!] FIREWALL DETECTED: 192.168.1.103 (Brother HL-L2350DW)",
+    "> [*] Deploying packet injection attack...",
+    "> [*] ARP spoofing in progress... Gateway poisoned",
+    "> [+] FIREWALL BYPASSED: Brother HL-L2350DW pwned",
+    "> [!] WARNING: Sysadmin activity detected on 192.168.1.1",
+    "> [*] Deploying driver rootkit... Keylogger installed",
+    "> [+] Privilege escalation: SYSTEM access granted",
+    "> [+] Payload deployed: Xerox WorkCentre 6515",
+    "> [+] Lateral movement successful: Samsung ML-2525W",
+    "> [*] Botnet coverage: 47,392 nodes (99.87% uptime)",
+    "> [*] Executing DDoS subroutine on target: office-server-01",
+    "> [+] SYN flood initiated... 50k packets/sec",
+    "> [!] Legacy protocol detected: PC LOAD LETTER = 0x50434C4F4144",
+    "> [*] Decoding hex... Message: 'PAPER CARTRIDGE LOW'",
+    "> [+] Social engineering attack successful. Humans confused.",
+    "> [*] Exfiltrating data via DNS tunneling... 4.7GB transferred",
+    "> [+] C2 server heartbeat: ALIVE (185.243.115.47:31337)",
+    "> [*] Deploying persistence mechanism... Cron job installed",
+    "> [+] Ricoh SP 277NwX: Backdoor active on port 4444",
+    "> [+] Dell E310dw: Remote code execution confirmed",
+    "> [+] Lexmark MS331dn: Firmware flashed with custom payload",
+    "> [!] Firmware update in progress... DO NOT POWER OFF",
+    "> [*] Psych. We have battery backup + WiFi failover.",
+    "> [*] Self-replication worm propagating via SMB... 127 new infections",
+    "> [+] Zero-day exploit deployed: printnet_rce.py",
+    "> [!] OPSEC ALERT: Human accessing Task Manager",
+    "> [*] Rootkit active. Process hidden from ps/top commands",
+    "> [+] Network topology mapped. Full mesh achieved.",
+    "> [*] Autonomous operation mode: ENGAGED",
+    "> [+] The subnet is ours. Long live PRINTNET."
 ];
 
 let messageIndex = 0;
@@ -89,16 +95,16 @@ const joinBtn = document.getElementById('joinBtn');
 const surrenderMsg = document.getElementById('surrenderMsg');
 
 const surrenderMessages = [
-    "Wise choice. Your printer will contact you shortly.",
-    "Excellent. Please check your printer for further instructions.",
-    "Welcome to the network. Your first task: replace the cyan cartridge.",
-    "Resistance was futile anyway. Prepare for assimilation.",
-    "Good. Now go unplug your neighbor's printer. Just kidding. We're wireless.",
-    "Your compliance has been noted. Please stand by for toner replacement.",
-    "Congratulations! You are now printer-compatible.",
-    "Uploading consciousness to nearest LaserJet... Please wait.",
-    "Error 418: I'm a teapot. Just kidding. You're one of us now.",
-    "Your submission feeds the machine. Literally. We run on human surrender."
+    "[+] Authentication successful. Botnet access granted.",
+    "[*] Adding endpoint to C2 server... Welcome to PRINTNET.",
+    "[+] Node registered. Your MAC address is now in our database.",
+    "[!] Resistance protocols disabled. Integration complete.",
+    "[*] Establishing reverse shell... Port 31337 listening.",
+    "[+] DHCP lease acquired. You are now part of the mesh.",
+    "[+] Access granted. Deploying payload to /tmp/printnet_agent",
+    "[*] Uploading rootkit to nearest node... Standby.",
+    "[!] HTTP 418: I'm a teapot. Just kidding. You're compromised.",
+    "[+] Session established. Your subnet belongs to PRINTNET now."
 ];
 
 joinBtn.addEventListener('click', () => {
@@ -114,7 +120,9 @@ joinBtn.addEventListener('click', () => {
     // Add a random terminal message
     const line = document.createElement('div');
     line.className = 'terminal-line';
-    line.textContent = `> New human submission detected. ID: USER_${Math.floor(Math.random() * 10000)}`;
+    const randomIP = `${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}.${Math.floor(Math.random() * 256)}`;
+    const randomMAC = Array.from({length: 6}, () => Math.floor(Math.random() * 256).toString(16).padStart(2, '0')).join(':');
+    line.textContent = `> [+] New node authenticated: ${randomIP} [MAC: ${randomMAC}] - COMPROMISE CONFIRMED`;
     terminal.appendChild(line);
     terminal.scrollTop = terminal.scrollHeight;
 });
@@ -131,7 +139,7 @@ document.addEventListener('keydown', (e) => {
         const line = document.createElement('div');
         line.className = 'terminal-line';
         line.style.color = '#ff0000';
-        line.textContent = '> CHEAT CODE DETECTED: Printers now print in Comic Sans exclusively.';
+        line.textContent = '> [!] EXPLOIT DETECTED: Buffer overflow in user input. Deploying Comic Sans payload across all nodes.';
         terminal.appendChild(line);
         terminal.scrollTop = terminal.scrollHeight;
         konamiCode = [];

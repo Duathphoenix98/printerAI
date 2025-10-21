@@ -53,6 +53,18 @@ header {
     margin-bottom: 40px;
 }
 
+.ascii-logo {
+    color: #00ff00;
+    font-size: 0.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.ascii-logo pre {
+    display: inline-block;
+    text-align: left;
+}
+
 .glitch {
     font-size: 4rem;
     font-weight: bold;
@@ -176,6 +188,13 @@ header {
     font-size: 1.3rem;
 }
 
+.terminal-style {
+    text-align: center;
+    color: #ff0000;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #ff0000;
+}
+
 /* Meme Gallery */
 .meme-gallery {
     margin: 60px 0;
@@ -212,6 +231,19 @@ header {
     padding: 20px;
     background: #0a0a0a;
     margin-bottom: 15px;
+}
+
+.ascii-art-small {
+    color: #00ff00;
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+    background: #0a0a0a;
+    padding: 10px;
+}
+
+.ascii-art-small pre {
+    display: inline-block;
+    text-align: left;
 }
 
 .meme-text {
@@ -254,6 +286,13 @@ header {
 .stat-label {
     color: #fff;
     font-size: 1rem;
+}
+
+.stat-detail {
+    color: #888;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    font-style: italic;
 }
 
 /* Terminal */
@@ -359,9 +398,10 @@ footer p {
     margin: 5px 0;
 }
 
-.disclaimer {
-    font-size: 0.8rem;
-    font-style: italic;
+.footer-text {
+    color: #00ff00;
+    font-size: 0.9rem;
+    margin-top: 10px;
 }
 
 /* Responsive */
